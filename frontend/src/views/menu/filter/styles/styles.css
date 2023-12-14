@@ -1,0 +1,17 @@
+.filter-component{
+    height: 9%;
+}
+.input-filter-component {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.349);
+    }
+    &:hover {
+        background-color: rgba(169, 169, 169, 0.557); 
+    }
+    &:hover::placeholder {
+        color: rgb(237, 237, 237);
+    }
+}
