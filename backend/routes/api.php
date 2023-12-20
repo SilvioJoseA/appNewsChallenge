@@ -12,6 +12,7 @@ use App\Http\Controllers\AlphaNewsController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::middleware('cors')->group(function () {
 Route::get('/alpha', [AlphaNewsController::class, 'getSources']);
 Route::post('/alpha', [AlphaNewsController::class, 'getNews']);
 
@@ -27,4 +28,5 @@ Route::post('/users/register', [UserController::class, 'store']);
 Route::put('/users/{userId}/settings', [UserSettingController::class, 'update']);
 Route::post('/settings', [UserSettingController::class , 'findSettings']);
 Route::post('/settings/store', [UserSettingController::class , 'store']);
+});
 
