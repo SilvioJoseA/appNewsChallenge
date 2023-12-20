@@ -31,7 +31,7 @@ const Header = (props) => {
                 <input className='form-control input-component' value={props.keyWordFilter} onChange={(e) => props.setKeyWordFilter(e.target.value)} placeholder='Keyword' />
             </div>
             <div className='col-3 d-flex justify-content-end align-items-center'>
-                <a onClick={handleNavLink} className='btn btn-outline-light'>Log Out</a>
+                <a onClick={handleNavLink} className='btn btn-outline-light'>Log Out a</a>
             </div>
         </div>
     )
